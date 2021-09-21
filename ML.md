@@ -1,4 +1,6 @@
-[Go to main page](../README.md)
+---
+title: Document Center
+---
 
 ## Exploratory Data Analysis (EDA) and Unsupervised Learning
 
