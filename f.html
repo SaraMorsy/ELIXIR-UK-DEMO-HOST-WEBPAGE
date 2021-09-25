@@ -51,26 +51,7 @@
 								<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6UnhWja1wj7fTRGRfnQyNViV_R-g8tWDueiGKNoRvnsWyfgF-xfEJKZoLblfLKbTBuFpIm8JSJkL9/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>							       
 								</section>
 								
-								<section>
-								<p> markdown embeded </p>
-								<p>We will first load up the UCI dataset. The dataset itself does not contain column names, we&#39;ve created a second file with only the column names, which we will use.
-							We will be using <a href="https://www.tidyverse.org">tidyverse</a>, a collection of R packages for Data Science.</p>
-							<pre>
-		                                        <code class="lang-r">library(tidyverse) # working <span class="hljs-keyword">with</span> data frames, plotting
-							
-							breastCancerData &lt;- read_csv(<span class="hljs-string">"https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data"</span>,
-										   col_names = FALSE)
-							
-							breastCancerDataColNames &lt;- read_csv(<span class="hljs-string">"https://raw.githubusercontent.com/fpsom/2021-06-ml-elixir-fr/main/data/wdbc.colnames.csv"</span>,
-																 col_names = FALSE)
-							
-							colnames(breastCancerData) &lt;- breastCancerDataColNames$X1
-							
-							# Check out head <span class="hljs-keyword">of</span> dataframe
-							breastCancerData %&gt;% head()
-							</code>
-		                                        </pre>
-								</section>
+								
 								
 								
 							<section>
